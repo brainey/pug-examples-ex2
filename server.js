@@ -4,6 +4,8 @@
 
 'use strict';
 
+const port = 3010;
+
 var express = require('express'),
     app = express(),
     pug = require('pug'),
@@ -30,5 +32,5 @@ app.post("/SkillOpted" , function(request, response){
 
 app.get("")
 
-app.listen(3000)
-console.log("Your application is running in port 3000")
+app.listen(port)
+console.log(`Your application is running in port ${port}`);
